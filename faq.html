@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAEERY - Frequently Asked Questions</title>
+    <link rel="stylesheet" href="faq.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">BAKERY</div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menus</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="us.html">Us</a></li>
+                <li><a href="contact us">contact</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="faq-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Frequently Asked Questions</h1>
+            <p class="hero-subtitle">Everything you need to know about our bakery</p>
+        </div>
+    </section>
+
+    <!-- Search Bar -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-box fade-in-up">
+                <i class="fas fa-search"></i>
+                <input type="text" id="faqSearch" placeholder="Search for questions...">
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Categories -->
+    <section class="faq-categories">
+        <div class="container">
+            <div class="categories-grid">
+                <div class="category-card fade-in-up" data-category="orders">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h3>Orders & Delivery</h3>
+                    <p>8 Questions</p>
+                </div>
+                <div class="category-card fade-in-up" style="animation-delay: 0.1s" data-category="products">
+                    <i class="fas fa-bread-slice"></i>
+                    <h3>Products</h3>
+                    <p>12 Questions</p>
+                </div>
+                <div class="category-card fade-in-up" style="animation-delay: 0.2s" data-category="payment">
+                    <i class="fas fa-credit-card"></i>
+                    <h3>Payment</h3>
+                    <p>6 Questions</p>
+                </div>
+                <div class="category-card fade-in-up" style="animation-delay: 0.3s" data-category="allergens">
+                    <i class="fas fa-heart"></i>
+                    <h3>Allergens & Diet</h3>
+                    <p>10 Questions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section class="faq-accordion">
+        <div class="container">
+            <h2 class="section-title fade-in-up">General Questions</h2>
+            
+            <div class="accordion-container">
+                <!-- Orders & Delivery -->
+                <div class="faq-group fade-in-up">
+                    <h3 class="group-title">
+                        <i class="fas fa-shopping-cart"></i>
+                        Orders & Delivery
+                    </h3>
+                    
+                    <div class="faq-item" data-category="orders">
+                        <div class="faq-question">
+                            <h4>How do I place an order?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>You can place an order through our website by selecting your desired items and adding them to your cart. We also accept phone orders at (555) 123-4567. For large orders, we recommend calling us at least 48 hours in advance to ensure availability.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="orders">
+                        <div class="faq-question">
+                            <h4>What are your delivery hours?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We offer delivery Monday through Saturday from 7:00 AM to 8:00 PM. Sunday deliveries are available from 8:00 AM to 6:00 PM. Same-day delivery is available for orders placed before 2:00 PM, subject to availability.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="orders">
+                        <div class="faq-question">
+                            <h4>Is there a minimum order for delivery?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we have a minimum order of $25 for delivery within a 5-mile radius. For deliveries beyond 5 miles, the minimum is $40. Free delivery is available for orders over $75.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="orders">
+                        <div class="faq-question">
+                            <h4>Can I modify or cancel my order?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Orders can be modified or cancelled up to 24 hours before the scheduled pickup or delivery time. Please contact us immediately if you need to make changes. Orders within 24 hours cannot be cancelled, but we may be able to make minor modifications.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Products -->
+                <div class="faq-group fade-in-up">
+                    <h3 class="group-title">
+                        <i class="fas fa-bread-slice"></i>
+                        Products & Ingredients
+                    </h3>
+                    
+                    <div class="faq-item" data-category="products">
+                        <div class="faq-question">
+                            <h4>Are your products made fresh daily?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolutely! All our breads, pastries, and cakes are baked fresh every morning starting at 4:00 AM. We never sell day-old products, and any unsold items are donated to local charities at the end of each day.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="products">
+                        <div class="faq-question">
+                            <h4>Do you use organic ingredients?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We use organic flour and butter in all our premium products. Our eggs are free-range, and we source seasonal fruits from local organic farms whenever possible. Look for the "Organic" label on our product descriptions.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="products">
+                        <div class="faq-question">
+                            <h4>How long do your products stay fresh?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our breads stay fresh for 2-3 days when stored in a paper bag at room temperature. Pastries are best enjoyed within 24 hours. Cakes can be refrigerated for up to 5 days. We recommend freezing items if you need to store them longer.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="products">
+                        <div class="faq-question">
+                            <h4>Can I request custom cakes or special orders?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! We love creating custom cakes for special occasions. Please give us at least 1 week notice for custom cake orders. Contact us to discuss your design ideas, flavors, and dietary requirements. We also offer custom cookie platters and party boxes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payment -->
+                <div class="faq-group fade-in-up">
+                    <h3 class="group-title">
+                        <i class="fas fa-credit-card"></i>
+                        Payment & Pricing
+                    </h3>
+                    
+                    <div class="faq-item" data-category="payment">
+                        <div class="faq-question">
+                            <h4>What payment methods do you accept?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We accept all major credit cards (Visa, Mastercard, American Express), debit cards, cash, Apple Pay, and Google Pay. For online orders, you can also pay via PayPal. Corporate accounts can be set up for regular bulk orders.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="payment">
+                        <div class="faq-question">
+                            <h4>Do you offer discounts or loyalty programs?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! Join our Baeery Rewards program to earn 1 point for every dollar spent. Redeem points for free items and exclusive discounts. We also offer 10% off for bulk orders over $100 and special promotions throughout the year.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="payment">
+                        <div class="faq-question">
+                            <h4>What is your refund policy?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Customer satisfaction is our priority. If you're not completely satisfied with your purchase, please contact us within 24 hours and we'll gladly provide a refund or replacement. Custom orders require 50% deposit which is non-refundable.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Allergens & Diet -->
+                <div class="faq-group fade-in-up">
+                    <h3 class="group-title">
+                        <i class="fas fa-heart"></i>
+                        Allergens & Dietary Options
+                    </h3>
+                    
+                    <div class="faq-item" data-category="allergens">
+                        <div class="faq-question">
+                            <h4>Do you have gluten-free options?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! We offer a variety of gluten-free breads, muffins, and cakes made in a dedicated gluten-free area to prevent cross-contamination. Look for items marked with our GF label. Please note that we cannot guarantee 100% gluten-free environment.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="allergens">
+                        <div class="faq-question">
+                            <h4>Do you have vegan options?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolutely! Our vegan selection includes several bread varieties, cookies, and select pastries. We can also create custom vegan cakes with advance notice. All vegan items are clearly labeled in our display cases.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="allergens">
+                        <div class="faq-question">
+                            <h4>How do you handle food allergies?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We take allergies very seriously. All our products are labeled with allergen information including nuts, dairy, eggs, and soy. Please inform our staff of any allergies when ordering, and we'll help you find safe options. We maintain detailed ingredient lists for all items.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="allergens">
+                        <div class="faq-question">
+                            <h4>Are your products suitable for diabetics?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We offer several low-sugar and sugar-free options sweetened with natural alternatives. Nutritional information is available for all products. We recommend consulting with your healthcare provider about incorporating our products into your diet plan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Still Have Questions -->
+    <section class="contact-cta">
+        <div class="container">
+            <div class="cta-content fade-in-up">
+                <i class="fas fa-question-circle"></i>
+                <h2>Still have questions?</h2>
+                <p>Can't find the answer you're looking for? Our friendly team is here to help.</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary">
+                        <i class="fas fa-phone"></i> Call Us
+                    </button>
+                    <button class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Email Us
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="quick-links">
+        <div class="container">
+            <div class="links-grid">
+                <div class="link-card fade-in-up">
+                    <i class="fas fa-clock"></i>
+                    <h4>Store Hours</h4>
+                    <p>Mon-Sat: 6AM - 9PM<br>Sunday: 7AM - 8PM</p>
+                </div>
+                <div class="link-card fade-in-up" style="animation-delay: 0.1s">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Visit Us</h4>
+                    <p>123 Bakery Street<br>Sweet Town, ST 12345</p>
+                </div>
+                <div class="link-card fade-in-up" style="animation-delay: 0.2s">
+                    <i class="fas fa-phone-alt"></i>
+                    <h4>Call Us</h4>
+                    <p>(555) 123-4567<br>Available 24/7</p>
+                </div>
+                <div class="link-card fade-in-up" style="animation-delay: 0.3s">
+                    <i class="fas fa-envelope"></i>
+                    <h4>Email Us</h4>
+                    <p>info@baeery.com<br>support@baeery.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+      <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <div class="logo-subtitle">SINCE 1989</div>
+                    <!-- <div class="logo">BAKERY</div> -->
+                    <div class="logo-subtitle">HANDMADE BREAD</div>
+                </div>
+                <p class="footer-description">Crafting the finest baked goods with love and tradition since 1989. Every bite tells a story of passion and quality.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Our Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#specialties">Specialties</a></li>
+                    <li><a href="#catering">Catering Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Our Services</h3>
+                <ul class="footer-links">
+                    <li><a href="menu.html">Custom Cakes</a></li>
+                    <li><a href="menu.html">Wedding Cakes</a></li>
+                    <li><a href="menu.html">Corporate Orders</a></li>
+                    <li><a href="faq.html">Delivery Service</a></li>
+                    <li><a href="faq.html">Baking Classes</a></li>
+                    <li><a href="contact.html">Wholesale</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact Info</h3>
+                <ul class="footer-contact">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Baker Street<br>Lagos, NG 10001</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <span>08053904851</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>FAVOURFERANMI17@GMAIL.COM</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-clock"></i>
+                        <span>Mon-Fri: 6AM - 8PM<br>Sat-Sun: 7AM - 9PM</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2025 Bakery @Favour Adebowale. All rights reserved. Handcrafted with ❤️</p>
+                <div class="footer-bottom-links">
+                    <a href="us.html">Privacy Policy</a>
+                    <span>|</span>
+                    <a href="us.html">Terms of Service</a>
+                    <span>|</span>
+                    <a href="contact.html">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="faq.js"></script>
+</body>
+</html>

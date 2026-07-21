@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAEERY - Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">BAKERY</div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menus</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="us.html">Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Get In Touch</h1>
+            <p class="hero-subtitle">We'd love to hear from you</p>
+        </div>
+    </section>
+
+    <!-- Quick Contact Cards -->
+    <section class="quick-contact">
+        <div class="container">
+            <div class="contact-cards">
+                <div class="contact-card fade-in-up">
+                    <div class="card-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>Mon-Sat: 6AM - 9PM</p>
+                    <a href="tel:+15551234567" class="contact-link">(555) 123-4567</a>
+                    <a href="tel:+15559876543" class="contact-link">(555) 987-6543</a>
+                </div>
+
+                <div class="contact-card fade-in-up" style="animation-delay: 0.1s">
+                    <div class="card-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>We'll respond within 24 hours</p>
+                    <a href="mailto:info@baeery.com" class="contact-link">info@baeery.com</a>
+                    <a href="mailto:orders@baeery.com" class="contact-link">orders@baeery.com</a>
+                </div>
+
+                <div class="contact-card fade-in-up" style="animation-delay: 0.2s">
+                    <div class="card-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p>Two convenient locations</p>
+                    <a href="#map" class="contact-link">123 Bakery Street</a>
+                    <a href="#map" class="contact-link">456 Sweet Avenue</a>
+                </div>
+
+                <div class="contact-card fade-in-up" style="animation-delay: 0.3s">
+                    <div class="card-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Opening Hours</h3>
+                    <p>Mon-Sat: 6:00 AM - 9:00 PM</p>
+                    <p>Sunday: 7:00 AM - 8:00 PM</p>
+                    <p class="closed-text">Closed on Public Holidays</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Info -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Form -->
+                <div class="form-container fade-in-left">
+                    <h2>Send Us a Message</h2>
+                    <p class="form-subtitle">Have a question or special request? Fill out the form below and we'll get back to you soon.</p>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject...</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="order">Order Information</option>
+                                <option value="custom">Custom Cake Request</option>
+                                <option value="catering">Catering Services</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="complaint">Complaint</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Tell us more about your inquiry..."></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Subscribe to our newsletter for exclusive offers and updates</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info Sidebar -->
+                <div class="info-sidebar fade-in-right">
+                    <div class="info-card">
+                        <h3>Why Contact Us?</h3>
+                        <ul class="info-list">
+                            <li><i class="fas fa-check-circle"></i> Custom cake consultations</li>
+                            <li><i class="fas fa-check-circle"></i> Bulk order arrangements</li>
+                            <li><i class="fas fa-check-circle"></i> Catering services</li>
+                            <li><i class="fas fa-check-circle"></i> Dietary requirements</li>
+                            <li><i class="fas fa-check-circle"></i> Product information</li>
+                            <li><i class="fas fa-check-circle"></i> Franchise opportunities</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card emergency-contact">
+                        <h3><i class="fas fa-exclamation-circle"></i> Urgent Orders?</h3>
+                        <p>For same-day orders or urgent requests, please call us directly:</p>
+                        <a href="tel:+15551234567" class="emergency-number">(555) 123-4567</a>
+                        <p class="emergency-note">Available Mon-Sat, 6 AM - 9 PM</p>
+                    </div>
+
+                    <div class="info-card social-card">
+                        <h3>Follow Us</h3>
+                        <p>Stay updated with our latest products and promotions</p>
+                        <div class="social-buttons">
+                            <a href="#" class="social-btn facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-btn twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-btn youtube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Locations -->
+    <section class="locations-section" id="map">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Our Locations</h2>
+            <p class="section-subtitle fade-in-up">Visit us at any of our two convenient locations</p>
+
+            <div class="locations-grid">
+                <!-- Location 1 -->
+                <div class="location-card fade-in-up">
+                    <div class="location-header">
+                        <h3><i class="fas fa-store"></i> Main Store</h3>
+                        <span class="location-badge">Flagship</span>
+                    </div>
+                    <div class="location-details">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Bakery Street, Sweet Town, ST 12345</p>
+                        <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                        <p><i class="fas fa-clock"></i> Mon-Sat: 6:00 AM - 9:00 PM</p>
+                        <p><i class="fas fa-clock"></i> Sunday: 7:00 AM - 8:00 PM</p>
+                    </div>
+                    <div class="location-features">
+                        <span class="feature-badge"><i class="fas fa-wifi"></i> Free WiFi</span>
+                        <span class="feature-badge"><i class="fas fa-wheelchair"></i> Accessible</span>
+                        <span class="feature-badge"><i class="fas fa-parking"></i> Parking</span>
+                    </div>
+                    <button class="btn btn-secondary location-btn" onclick="showLocation(1)">
+                        <i class="fas fa-directions"></i> Get Directions
+                    </button>
+                </div>
+
+                <!-- Location 2 -->
+                <div class="location-card fade-in-up" style="animation-delay: 0.2s">
+                    <div class="location-header">
+                        <h3><i class="fas fa-store"></i> Downtown Branch</h3>
+                        <span class="location-badge new">New</span>
+                    </div>
+                    <div class="location-details">
+                        <p><i class="fas fa-map-marker-alt"></i> 456 Sweet Avenue, Downtown, ST 12346</p>
+                        <p><i class="fas fa-phone"></i> (555) 987-6543</p>
+                        <p><i class="fas fa-clock"></i> Mon-Sat: 6:30 AM - 8:00 PM</p>
+                        <p><i class="fas fa-clock"></i> Sunday: 7:00 AM - 7:00 PM</p>
+                    </div>
+                    <div class="location-features">
+                        <span class="feature-badge"><i class="fas fa-wifi"></i> Free WiFi</span>
+                        <span class="feature-badge"><i class="fas fa-wheelchair"></i> Accessible</span>
+                        <span class="feature-badge"><i class="fas fa-coffee"></i> Cafe</span>
+                    </div>
+                    <button class="btn btn-secondary location-btn" onclick="showLocation(2)">
+                        <i class="fas fa-directions"></i> Get Directions
+                    </button>
+                </div>
+            </div>
+
+            <!-- Interactive Map -->
+            <!-- <div class="map-container fade-in-up">
+                <div id="map" class="map"></div>
+            </div>
+        </div> -->
+    </section>
+
+    <!-- FAQ Quick Links -->
+    <section class="faq-links">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Have Questions?</h2>
+            <div class="faq-grid">
+                <div class="faq-card fade-in-up">
+                    <i class="fas fa-question-circle"></i>
+                    <h3>General FAQs</h3>
+                    <p>Find answers to common questions about our products and services</p>
+                    <a href="#" class="faq-link">View FAQs <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="faq-card fade-in-up" style="animation-delay: 0.1s">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h3>Order Help</h3>
+                    <p>Learn about our ordering process and delivery options</p>
+                    <a href="#" class="faq-link">Order Guide <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="faq-card fade-in-up" style="animation-delay: 0.2s">
+                    <i class="fas fa-birthday-cake"></i>
+                    <h3>Custom Cakes</h3>
+                    <p>Information about custom cake orders and consultations</p>
+                    <a href="#" class="faq-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Message Sent!</h2>
+            <p>Thank you for contacting us. We'll get back to you within 24 hours.</p>
+            <button class="btn btn-primary" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <div class="logo-subtitle">SINCE 1989</div>
+                    <!-- <div class="logo">BAKERY</div> -->
+                    <div class="logo-subtitle">HANDMADE BREAD</div>
+                </div>
+                <p class="footer-description">Crafting the finest baked goods with love and tradition since 1989. Every bite tells a story of passion and quality.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Our Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#specialties">Specialties</a></li>
+                    <li><a href="#catering">Catering Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Our Services</h3>
+                <ul class="footer-links">
+                    <li><a href="menu.html">Custom Cakes</a></li>
+                    <li><a href="menu.html">Wedding Cakes</a></li>
+                    <li><a href="menu.html">Corporate Orders</a></li>
+                    <li><a href="faq.html">Delivery Service</a></li>
+                    <li><a href="faq.html">Baking Classes</a></li>
+                    <li><a href="contact.html">Wholesale</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact Info</h3>
+                <ul class="footer-contact">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Baker Street<br>Lagos, NG 10001</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <span>08053904851</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>FAVOURFERANMI17@GMAIL.COM</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-clock"></i>
+                        <span>Mon-Fri: 6AM - 8PM<br>Sat-Sun: 7AM - 9PM</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2025 Bakery @Favour Adebowale. All rights reserved. Handcrafted with ❤️</p>
+                <div class="footer-bottom-links">
+                    <a href="us.html">Privacy Policy</a>
+                    <span>|</span>
+                    <a href="us.html">Terms of Service</a>
+                    <span>|</span>
+                    <a href="contact.html">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="contact.js"></script>
+</body>
+</html>
